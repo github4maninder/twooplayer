@@ -1,17 +1,9 @@
 class Player
-
-  attr_accessor :name, :lives
-
-  def initialize(name)
-    @name = name
+  attr_reader :lives
+  def initialize
     @lives = 3
   end
-
-  def reduce_life
-    @lives -= 1
-  end
-
-  def score
-    "#{@lives}/3"
+  def subtract_life
+    @lives -= 1;
   end
 end
