@@ -1,5 +1,11 @@
-# require "./player.rb"
-require "./twooplayer.rb"
 
-game = Twooplayer.new
-game.play
+require './player'
+require './match'
+require './question'
+require './game'
+require 'pp'
+
+
+
+game = Game.new
+game.start
